@@ -53,26 +53,21 @@ class Server:
             Dict: A dictionary with pagination information.
         """
         indexed_dataset = self.indexed_dataset()
-        
         # If index is None, set it to 0
         if index is None:
             index = 0
-            
         # Verify that index is in a valid range
         assert isinstance(index, int) and 0 <= index < len(indexed_dataset)
-        
         # Initialize variables
         data = []
         next_index = index
         count = 0
-        
         # Get data for the current page
         while count < page_size and next_index < len(indexed_dataset):
             if next_index in indexed_dataset:
                 data.append(indexed_dataset[next_index])
                 count += 1
             next_index += 1
-            
         # Return dictionary with the required key-value pairs
         return {
             'index': index,

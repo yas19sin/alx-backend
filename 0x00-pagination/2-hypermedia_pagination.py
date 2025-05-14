@@ -60,12 +60,10 @@ class Server:
 
         start, end = index_range(page, page_size)
         dataset = self.dataset()
-        
         if start >= len(dataset):
             return []
-        
         return dataset[start:end]
-    
+
     def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict[str, Any]:
         """
         Return a dictionary containing hypermedia pagination information.
@@ -75,12 +73,12 @@ class Server:
             page_size (int, optional): The page size. Defaults to 10.
 
         Returns:
-            Dict[str, Any]: A dictionary containing hypermedia pagination information.
+            Dict[str, Any]: A dictionary containing hypermedia pagination info.
         """
         data = self.get_page(page, page_size)
         total_data = len(self.dataset())
         total_pages = math.ceil(total_data / page_size) if page_size > 0 else 0
-        
+
         return {
             'page_size': len(data),
             'page': page,
