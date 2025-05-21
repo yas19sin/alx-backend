@@ -1,0 +1,20 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+
+msgid "home_title"
+msgstr "Bienvenue chez ALX"
+
+msgid "home_header"
+msgstr "Bonjour monde!"
+
+msgid "logged_in_as"
+msgstr "Vous êtes connecté en tant que %(username)s."
+
+msgid "not_logged_in"
+msgstr "Vous n'êtes pas connecté."
+
+msgid "current_time_is"
+msgstr "Nous sommes le %(current_time)s."
