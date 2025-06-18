@@ -1,0 +1,20 @@
+{
+  "extends": ["airbnb-base"],
+  "env": {
+    "es6": true,
+    "node": true,
+    "mocha": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-console": "off",
+    "no-unused-vars": ["error", { "args": "none" }],
+    "import/extensions": ["error", "ignorePackages", {
+      "js": "never"
+    }],
+    "max-len": ["error", { "code": 120 }]
+  }
+}

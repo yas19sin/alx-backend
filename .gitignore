@@ -1,3 +1,10 @@
 *-main.*
+!8-job-main.js
 */__pycache__/*
 */venv/*
+*/node_modules/*
+*/redis-6.0.10/*
+0x03-queuing_system_in_js/PROJECT_SUMMARY.md
+0x03-queuing_system_in_js/verify_tasks.sh
+0x03-queuing_system_in_js/install_redis.sh
+0x03-queuing_system_in_js/LINT_SUMMARY.md
